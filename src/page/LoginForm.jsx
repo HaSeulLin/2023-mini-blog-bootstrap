@@ -39,8 +39,8 @@ export default function LoginForm({setUser}) {
           <Form.Label>비밀번호</Form.Label>
           <Form.Control type="password" placeholder="비밀번호를 입력해 주세요." />
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
+        <Button variant="success" type="submit">
+          로그인
         </Button>
       </Form>
     </div>

@@ -1,6 +1,7 @@
 * {margin: 0; padding: 0;}
 body {width: 100%; padding: 0; margin: 0;}
-a {text-decoration: none; color: black;}
+
+a {text-decoration: none; color: green;}
 
 .App {
   width: 100%;

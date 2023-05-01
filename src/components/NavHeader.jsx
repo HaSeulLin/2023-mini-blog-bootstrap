@@ -5,6 +5,10 @@ import Nav from "react-bootstrap/Nav";
 import Container from 'react-bootstrap/esm/Container';
 import Navbar from "react-bootstrap/Navbar";
 
+// 폰트어썸의 아이콘 사용
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons'
+
 // 라우터의 Link와 부트스트랩을 이용해서 작성
 //  >> 예시를 그대로 사용하거나 수정하여 사용
 
@@ -20,9 +24,11 @@ import Navbar from "react-bootstrap/Navbar";
 export default function NavHeader({user}) {
   return (
     <div>
-      <Navbar bg='primary' variant='dark'>
+      <Navbar bg='success' variant='dark'>
         <Container>
-          <Link className='navbar-brand'>블로그</Link>
+          <Link className='navbar-brand'>
+            <FontAwesomeIcon icon={faGoogle} style={{color:"yellow", width:"25px", height:"25px"}} /> 블로그
+          </Link>
           <Nav className='me-auto'>
             <Link to="/" className='nav-link'>홈</Link>
             <Link to="/boardlist" className='nav-link'>게시판</Link>
@@ -33,6 +39,7 @@ export default function NavHeader({user}) {
               user ? <Navbar.Text>{user.name}</Navbar.Text> :
               <Link to="/loginform" className='nav-link'>로그인</Link>
             }
+            <Link to="/practice" className='nav-link'>연습</Link>
           </Nav>
         </Container>
       </Navbar>

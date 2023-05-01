@@ -2,8 +2,8 @@ import React, { useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router'
 
 export default function Board({boardlist}) {
-  // params 값으로 전달할 수 있는
-
+  // params 값으로 전달할 수 있는 내용은 숫자형과 문자형
+  // 값으로 받아오면 문자형으로 들어온다
   const params = useParams();
   const navigate = useNavigate();
 
@@ -16,6 +16,7 @@ export default function Board({boardlist}) {
   const board = boardlist.find((board)=> board.id == params.id);
 
   //  if (board===undefined) { navigate('/board'); } 
+  
   // react 컴포넌트의 실행 순서
   // 1. 컴포넌트 안에 있는 순서대로 자바스크립트 실행
   // 2. return을 통해서 화면 출력

@@ -8,7 +8,7 @@ export default function Boardlist({board}) {
     <div>
         <Card key={board.id} style={{ width: '18rem', margin:'auto'}}>
             <Card.Body>
-                <Link to={`/boardlist/${board.id}`} style={{borderBottom:'1px dotted blue'}}>{board.title}</Link>
+                <Link to={`/boardlist/${board.id}`} style={{borderBottom:'2px solid green'}}>{board.title}</Link>
                 <Card.Text>
                     {board.date}
                 </Card.Text>

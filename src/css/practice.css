@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.box {
+    position: absolute;
+	width: 200px;
+	height: 200px;
+	box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
+	animation: animate 3s ease-in-out infinite;
+	font-size: 100px;
+	font-family: montserrat;
+	font-weight: 500;
+	color: #c7c7c7;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-30px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}

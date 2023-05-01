@@ -2,6 +2,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
+// 리액트 슬릭
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 // 라우터 사용할 때는 BrowserRouter를 들고와서 사용
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
@@ -12,7 +16,15 @@ import Board from './page/Board';
 import BoardForm from './page/BoardForm';
 import LoginForm from './page/LoginForm';
 import NavHeader from './components/NavHeader';
+import PracticePage from './page/PracticePage';
+
 import { useState } from 'react';
+
+// 이 값이 바뀌었을 때 화면에 출력할 필요가 없으므로
+// 컴포넌트 밖에 작성을 하여 값이 바뀔 수 있도록 하낟
+// 컴포넌트 안에서 작성하면 업데이트 할 때마다 값이 고정됨
+// 값이 바뀔 때마다 화면을 바꾸고 싶으면 useState() 사용
+let id = 3;
 
 function App() {
   // 데이터를 하위 컴포넌트에 전달하기 위해서
@@ -46,6 +58,11 @@ function App() {
     ]
   )
 
+  // id 값을 1씩 증가하는 함수
+  const addId = () => {
+    id = id + 1;
+  }
+
   // 주소와 페이지 (컴포넌트 연결)
   return (
     <div className="App">
@@ -55,12 +72,15 @@ function App() {
         <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/boardlist' element={<Boardlist boardlist={boardlist}/>} />
-            <Route path='/boardlist/:id' element={<Board boardlist={boardlist} />}
-              errorElement={<Home />}
-            />
-            <Route path='/boardform' element={<BoardForm />} />
+            <Route path='/boardlist/:id' element={<Board boardlist={boardlist} />} />
+            <Route path='/boardform'
+              element={<BoardForm
+                setBoardlist={setBoardlist} id={id}
+                boardlist={boardlist} user={user} addId={addId}
+              />} />
 
             <Route path='/loginform' element={<LoginForm setUser={setUser}/>} />
+            <Route path='/practice' element={<PracticePage />} />  
         </Routes>
       </BrowserRouter>
     </div>
