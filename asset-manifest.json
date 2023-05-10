@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/2023-mini-blog-bootstrap/static/css/main.87da731b.css",
+    "main.js": "/2023-mini-blog-bootstrap/static/js/main.9116ed5f.js",
+    "static/js/787.9e0c1f39.chunk.js": "/2023-mini-blog-bootstrap/static/js/787.9e0c1f39.chunk.js",
+    "static/media/pic2.png": "/2023-mini-blog-bootstrap/static/media/pic2.8dcfc38361e99f05b7f5.png",
+    "static/media/pic3.png": "/2023-mini-blog-bootstrap/static/media/pic3.118233626f42617d9bf3.png",
+    "static/media/pic1.jpg": "/2023-mini-blog-bootstrap/static/media/pic1.f08846e370c78ea6066f.jpg",
+    "static/media/slick.svg": "/2023-mini-blog-bootstrap/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/2023-mini-blog-bootstrap/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/2023-mini-blog-bootstrap/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/2023-mini-blog-bootstrap/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/2023-mini-blog-bootstrap/index.html",
+    "main.87da731b.css.map": "/2023-mini-blog-bootstrap/static/css/main.87da731b.css.map",
+    "main.9116ed5f.js.map": "/2023-mini-blog-bootstrap/static/js/main.9116ed5f.js.map",
+    "787.9e0c1f39.chunk.js.map": "/2023-mini-blog-bootstrap/static/js/787.9e0c1f39.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87da731b.css",
+    "static/js/main.9116ed5f.js"
+  ]
+}
